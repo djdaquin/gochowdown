@@ -1,20 +1,21 @@
 .recipeItems {
-  ul {
-      margin:0; 
-      padding:0; 
-      list-style:none;
-  }
-  ul li {  
-    padding:0 0 0 25px; 
-    position:relative; 
-    margin-top: 0.5rem;
-  }
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    ul li {
+        padding: 0 0 0 25px;
+        position: relative;
+        margin-top: 0.5rem;
+    }
 }
 
 .checkbox-container {
-  display: flex;
-  flex-flow: row nowrap;
-  padding-bottom: 1rem;
+    display: flex;
+    flex-flow: row nowrap;
+    padding-bottom: 1rem;
 }
 
 /* Styling Checkbox Starts */
@@ -37,6 +38,7 @@
     opacity: 0;
     cursor: pointer;
 }
+
 .checkbox-label .checkbox-custom {
     position: absolute;
     top: 0px;
@@ -60,7 +62,7 @@
     -webkit-transform: rotate(0deg) scale(1);
     -ms-transform: rotate(0deg) scale(1);
     transform: rotate(0deg) scale(1);
-    opacity:1;
+    opacity: 1;
 }
 
 
@@ -77,7 +79,7 @@
     -webkit-transform: rotate(0deg) scale(0);
     -ms-transform: rotate(0deg) scale(0);
     transform: rotate(0deg) scale(0);
-    opacity:1;
+    opacity: 1;
     transition: all 0.3s ease-out;
     -webkit-transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
@@ -87,16 +89,25 @@
 
 
 .checkbox-label input:checked ~ .checkbox-custom::after {
-  -webkit-transform: rotate(45deg) scale(1);
-  -ms-transform: rotate(45deg) scale(1);
-  transform: rotate(45deg) scale(1);
-  opacity:1;
-  left: 8px;
-  top: 2px;
-  width: 6px;
-  height: 12px;
-  border: solid $blue;
-  border-width: 0 3px 3px 0;
-  background-color: transparent;
-  border-radius: 0;
+    -webkit-transform: rotate(45deg) scale(1);
+    -ms-transform: rotate(45deg) scale(1);
+    transform: rotate(45deg) scale(1);
+    opacity: 1;
+    left: 8px;
+    top: 2px;
+    width: 6px;
+    height: 12px;
+    border: solid $blue;
+    border-width: 0 3px 3px 0;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+.recipeImage {
+    max-height: 400px;
+    width: auto;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
